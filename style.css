@@ -1,0 +1,91 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+#header{
+background-color: grey;
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 100px;
+padding: 5px 10%;
+}
+#header img {
+height: 85px;
+width: 85px;
+border-radius: 50px;
+border-style: ridge;
+
+}
+#header img:hover{
+    transform: scale(1.1);
+}
+#header #nav-links{
+    list-style: none;
+}
+#header #nav-links li{
+    display: inline-block;
+    padding: 25px;
+}
+#header #nav-links a{
+    font-size: 700;
+    color: white;
+    text-decoration: none;
+}
+#header #nav-links li a:hover{
+   color: rgb(72, 72, 224);
+}
+#slider-container{
+    background-image: url(pexels-wearelivingart-8960865.jpg);
+    background-size: cover;
+    
+    min-height: 650px;
+    background-color: #444;
+    margin: 0 auto;
+    animation: animate 10s infinite;
+}
+
+    @keyframes animate{
+        20%{
+            background-image: url(pexels-wearelivingart-8960865.jpg);
+            background-size: cover;
+        }
+    }
+    @keyframes animate{
+        20%{
+            background-image: url(pexels-wearelivingart-8960867.jpg);
+            background-size: cover;
+        }
+    }
+    #contenedor{
+        background-color: rgb(152, 150, 150);
+    }
+    #contenido{
+        color: aliceblue;
+        padding: 25px;
+    }
+    #contenido h2{
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 35px;
+    }
+    #contenido .img-gg{
+        float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    }
+    footer{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        padding: 25px;
+        text-align: center;
+        font-size: 17.5px;
+    }
